@@ -11,12 +11,13 @@
 }
 
 .header_ul {
-  gap: 30px;
+  gap: 40px;
 }
 
 .header_nav a {
-  font: 700 1.125rem/1.35 "Poppins", sans-serif;
-  padding: 16px;
+  display: inline-block;
+  font: 500 1.2rem "Poppins", sans-serif;
+  padding: 16px 0;
   color: var(--cor-0);
   position: relative;
 }
@@ -27,7 +28,7 @@
   display: inline-block;
   width: 75px;
   height: 2px;
-  left: 20px;
   bottom: 10px;
   background-color: aliceblue;
+  transition: 300ms;
 }

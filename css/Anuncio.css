@@ -1,0 +1,51 @@
+.anuncio {
+  align-items: center;
+  gap: 50px;
+}
+
+.anuncio_main {
+  background-color: black;
+  box-shadow: inset 0 -120px var(--cor-0);
+}
+
+.anuncio_texto {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  justify-items: left;
+}
+
+.anuncio_link {
+  border-radius: 4px;
+  padding: 16px 32px;
+  background: linear-gradient(#ffbf00, #f2a50c);
+  color: var(--cor-12);
+  font: 600 1.125rem/1.35 "Poppins", sans-serif;
+}
+.anuncio_link img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.anuncio_link:hover {
+  background: linear-gradient(#ffbf00, #b67900);
+}
+
+.anuncio_texto_h1_span {
+  color: var(--cor-p1);
+  font-weight: 1000;
+  font-size: 56px;
+  border-radius: 28px;
+}
+
+@media (max-width: 800px) {
+  .anuncio {
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 0;
+  }
+
+  .anuncio_texto {
+    justify-items: center;
+  }
+}
