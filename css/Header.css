@@ -5,12 +5,13 @@
 .header_container {
   justify-content: space-between;
   align-items: center;
-  padding: 30px 0;
+  padding: 30px 10px;
   flex-wrap: wrap;
   gap: 20px;
 }
 
 .header_ul {
+  flex-wrap: wrap;
   gap: 40px;
 }
 
@@ -31,4 +32,27 @@
   bottom: 10px;
   background-color: aliceblue;
   transition: 300ms;
+}
+
+@media (max-width: 800px) {
+  .header_container {
+    padding: 10px 20px;
+  }
+  .font-1-xxl {
+    font-size: 10px;
+  }
+  .header_nav a {
+    background-color: var(--cor-9);
+    padding: 5px 10px;
+    border-radius: 4px;
+  }
+  .header_nav a:hover {
+    background-color: var(--cor-7);
+  }
+  .header_nav a:hover::before {
+    display: none;
+  }
+  .header_img {
+    padding: 16px 0;
+  }
 }

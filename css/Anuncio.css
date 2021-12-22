@@ -37,7 +37,11 @@
   font-size: 56px;
   border-radius: 28px;
 }
-
+@media (max-width: 950px) {
+  .anuncio_main {
+    box-shadow: inset 0 -100px var(--cor-0);
+  }
+}
 @media (max-width: 800px) {
   .anuncio {
     flex-direction: column;
@@ -47,5 +51,19 @@
 
   .anuncio_texto {
     justify-items: center;
+  }
+  .anuncio_img_tag {
+    content: url("../img/bicicletas/nimbus.jpg");
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .anuncio_img {
+    align-self: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .anuncio_img_tag {
+    max-width: 310px;
   }
 }
