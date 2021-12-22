@@ -38,6 +38,9 @@
   .header_container {
     padding: 10px 20px;
   }
+  .header_ul {
+    justify-content: center;
+  }
   .font-1-xxl {
     font-size: 10px;
   }
@@ -54,5 +57,11 @@
   }
   .header_img {
     padding: 16px 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .header_container {
+    justify-content: center;
   }
 }
