@@ -1,11 +1,14 @@
 .container {
-  display: flex;
   margin: 0 auto;
   max-width: 1200px;
 }
 
 .flex {
   display: flex;
+}
+
+.margin-top_50 {
+  margin-top: 50px;
 }
 
 .span-yellow {
@@ -22,17 +25,33 @@
 .font-1-xxl {
   font: 600 4rem/1.125 "Poppins", sans-serif;
 }
+.font-1-xl {
+  font: 600 2rem/1.25 "Poppins", sans-serif;
+}
 
 .font-2-l,
 .font-2-l-b {
   font: 400 1.5rem/1.5 "Roboto", sans-serif;
 }
+.font-2-m {
+  font: 500 1.125rem/1.35 "Roboto", sans-serif;
+}
+
 @media (max-width: 800px) {
+  .font-1-xl {
+    font: 600 1.5rem/1.25 "Poppins", sans-serif;
+  }
   .font-1-xxl {
     font-size: 2rem;
   }
   .font-2-l {
     font-size: 1.125rem;
+  }
+  .font-2-m {
+    font: 500 1rem/1.5 "Roboto", sans-serif;
+  }
+  .margin-top_50 {
+    margin-top: 0px;
   }
 }
 /*CORES*/

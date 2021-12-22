@@ -1,0 +1,18 @@
+.carrossel_lista {
+  gap: 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.carrossel_link {
+  color: var(--cor-12);
+}
+
+.carrossel_lista {
+  overflow-x: auto;
+  padding: 0 20px;
+}
+
+.carrossel_link img {
+  min-width: 280px;
+}
