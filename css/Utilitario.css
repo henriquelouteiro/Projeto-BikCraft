@@ -22,7 +22,10 @@
   border-radius: 28px;
 }
 /*FONTES*/
-
+.font-1-m,
+.font-1-m-b {
+  font: 500 1.125rem/1.35 "Poppins", sans-serif;
+}
 .font-1-xxl {
   font-size: 2rem;
 }
@@ -39,6 +42,10 @@
 }
 .font-2-m {
   font: 500 1.125rem/1.35 "Roboto", sans-serif;
+}
+
+.font-2-s {
+  font: 400 1rem/1.5 "Roboto", sans-serif;
 }
 
 @media (max-width: 800px) {
