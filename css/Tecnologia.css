@@ -6,6 +6,7 @@
   color: white;
   grid-template-columns: 1fr 1fr;
   align-items: center;
+  gap: 10px;
 }
 
 .tecnologia_texto {
@@ -34,7 +35,9 @@
 
   border-bottom: 2px solid var(--cor-0);
 }
-
+.tecnologia_texto_msg {
+  padding: 20px 0;
+}
 @media (max-width: 1050px) {
   .tecnologia_texto {
     padding: 20px 0;
@@ -56,5 +59,8 @@
 @media (max-width: 400px) {
   .tecnologia_itens {
     flex-direction: column;
+  }
+  .tecnologia_texto_lista {
+    margin-bottom: 20px;
   }
 }
