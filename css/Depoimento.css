@@ -13,10 +13,50 @@
   flex-direction: column;
 }
 .depoimento_texto blockquote {
+  position: relative;
   margin-top: auto;
-  max-width: 32ch;
 }
 .depoimento_nome {
   display: block;
   text-align: end;
+}
+
+.depoimento_texto_p:after {
+  content: "”";
+  color: var(--cor-p2);
+  font-size: 4rem;
+  position: absolute;
+  bottom: -30px;
+}
+
+.depoimento_texto_p:before {
+  content: "”";
+  color: var(--cor-p2);
+  font-size: 4rem;
+  position: absolute;
+  left: -30px;
+  top: -15px;
+}
+
+@media (max-width: 800px) {
+  .depoimento_texto_p:after {
+    font-size: 2rem;
+    bottom: -5px;
+  }
+
+  .depoimento_texto_p:before {
+    font-size: 2rem;
+    left: -20px;
+    top: -10px;
+  }
+  .depoimento_todo {
+    grid-template-columns: 1fr;
+  }
+  .depoimento_img {
+    max-height: 150px;
+  }
+  .depoimento_texto {
+    padding: 10px 20px;
+    background-color: var(--cor-p1);
+  }
 }
