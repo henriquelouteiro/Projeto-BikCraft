@@ -1,13 +1,78 @@
+.seguros {
+  background-color: var(--cor-11);
+  color: white;
+}
+
 .seguros_itens {
-  gap: 20px;
+  gap: 40px;
   grid-template-columns: 1fr 1fr;
+}
+.seguros_titulo {
+  padding: 50px 0;
 }
 
 .seguros_item {
-  padding: 20px;
-  background-color: rgb(250, 139, 139);
+  background-color: var(--cor-12);
+  border-radius: 4px;
+  gap: 20px;
+  padding: 20px 60px;
 }
 
 .seguros_item_titulo {
   justify-content: space-between;
+}
+
+.seguros_inscrever {
+  color: var(--cor-2);
+  align-self: initial;
+  padding: 10px 20px;
+  background-color: var(--cor-9);
+  border-radius: 4px;
+  max-width: max-content;
+  max-height: 50px;
+  font: 600 1.125rem/1.35 "Poppins", sans-serif;
+}
+.seguros_inscrever:hover {
+  background-color: var(--cor-10);
+}
+.seguros_lista {
+  gap: 20px;
+  position: relative;
+}
+
+.seguros_lista li:after {
+  content: "";
+  position: absolute;
+  background-image: url(../img/icones/lista.svg);
+  left: -16px;
+  margin-top: 10px;
+  width: 15px;
+  height: 10px;
+  background-repeat: no-repeat;
+}
+
+.seguros_span {
+  text-align: right;
+  display: block;
+}
+
+.seguros_h2_ouro {
+  color: var(--cor-p1);
+}
+
+.gold {
+  color: black;
+  background: linear-gradient(#ffbf00, #f2a50c);
+}
+
+.gold:hover {
+  color: black;
+  background: linear-gradient(#a17900, #ffc551);
+}
+
+@media (max-width: 800px) {
+  .seguros_itens {
+    gap: 40px;
+    grid-template-columns: 1fr;
+  }
 }
