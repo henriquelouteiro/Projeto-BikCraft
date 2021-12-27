@@ -1,0 +1,13 @@
+.seguros_itens {
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.seguros_item {
+  padding: 20px;
+  background-color: rgb(250, 139, 139);
+}
+
+.seguros_item_titulo {
+  justify-content: space-between;
+}
