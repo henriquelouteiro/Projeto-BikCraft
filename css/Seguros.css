@@ -6,6 +6,7 @@
 .seguros_itens {
   gap: 40px;
   grid-template-columns: 1fr 1fr;
+  padding: 40px 5px;
 }
 .seguros_titulo {
   padding: 50px 0;

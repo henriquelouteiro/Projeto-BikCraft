@@ -1,0 +1,40 @@
+.rodape {
+  background-color: black;
+}
+.rodape_todo {
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+  padding: 30px 10px;
+  color: white;
+}
+
+.footer_paragrafo {
+  grid-column: 2 / 3;
+}
+
+.footer_contato_itens {
+  padding: 30px 2px;
+}
+
+.footer_contato_item {
+  padding: 5px 2px;
+}
+
+@media (max-width: 800px) {
+  .rodape_todo {
+    gap: 40px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .rodape_todo img {
+    display: none;
+  }
+  .footer_paragrafo {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 400px) {
+  .rodape_todo {
+    grid-template-columns: 1fr;
+  }
+}
