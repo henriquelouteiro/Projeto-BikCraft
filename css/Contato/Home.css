@@ -1,0 +1,64 @@
+.contato_formulario {
+  background-image: linear-gradient(
+    to bottom,
+    var(--cor-11) 50%,
+    var(--cor-1) 0%
+  );
+}
+.contato_formulario_todo {
+  grid-template-columns: 2fr 3fr;
+  padding: 20px;
+}
+
+.contato_localizacao_endereco,
+.contato_localizacao_tel {
+  gap: 10px;
+}
+
+.contato_localizacao_tel img,
+.contato_localizacao_endereco img {
+  width: 20px;
+  height: 20px;
+}
+
+.contato_formulario_localizacao {
+  border-radius: 4px;
+  color: var(--cor-0);
+  padding: 40px;
+  background-color: var(--cor-12);
+  gap: 50px;
+}
+
+.redes {
+  padding: 0px 20px;
+  gap: 20px;
+}
+
+.contato_formulario_cadastro {
+  background-color: var(--cor-0);
+}
+
+.contato_formulario_cad {
+  font: 500 1.3rem "Poppins", sans-serif;
+  grid-template-columns: 1fr 1fr;
+  padding: 40px;
+  gap: 20px;
+}
+
+.contato_preencher input,
+.contato_preencher textarea {
+  border: 1px solid var(--cor-3);
+  font: 500 1rem "Poppins", sans-serif;
+  border-radius: 4px;
+  padding: 10px 5px;
+  background-color: var(--cor-2);
+}
+
+@media (max-width: 800px) {
+  .contato_formulario_todo {
+    grid-template-columns: 1fr;
+  }
+  .contato_formulario_cad {
+    grid-template-columns: 1fr;
+  }
+}
