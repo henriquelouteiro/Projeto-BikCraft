@@ -26,6 +26,11 @@
   font-size: 56px;
   border-radius: 28px;
 }
+
+.padding_50 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
 /*FONTES*/
 .font-1-xs {
   font: 500 0.75rem/1.35 "Poppins", sans-serif;
@@ -71,6 +76,10 @@
   }
   .margin-top_50 {
     margin-top: 10px;
+  }
+  .padding_50 {
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 }
 /*CORES*/

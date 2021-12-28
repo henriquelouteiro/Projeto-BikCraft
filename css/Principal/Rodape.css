@@ -19,7 +19,9 @@
 .footer_contato_item {
   padding: 5px 2px;
 }
-
+.footer_redes {
+  gap: 10px;
+}
 @media (max-width: 800px) {
   .rodape_todo {
     gap: 40px;

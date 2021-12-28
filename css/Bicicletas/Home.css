@@ -1,0 +1,116 @@
+.bike_titulo {
+  background-color: var(--cor-11);
+  color: white;
+}
+
+.bike_item_anuncio {
+  grid-template-columns: 1fr 1fr;
+}
+.bike_conteudo {
+  grid-template-columns: 1fr;
+  align-content: start;
+  gap: 20px;
+}
+.bike_anuncio {
+  position: relative;
+}
+
+.bike_anuncio_preco {
+  position: absolute;
+  content: "";
+  right: 0px;
+  top: 15px;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border-radius: 4px;
+}
+
+.bike_item_anuncio {
+  gap: 40px;
+}
+
+.bike_descricao_item {
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.bike_descricao_item img {
+  width: 24px;
+  height: 24px;
+}
+.bike_descricao_itens_todo {
+  grid-template-columns: 1fr auto;
+}
+.bike_descricao_itens_link {
+  color: var(--cor-12);
+  padding: 16px 32px;
+  background-color: aquamarine;
+  place-self: end;
+  border-radius: 4px;
+  background: linear-gradient(#ffbf00, #f2a50c);
+  font: 600 1.125rem/1.35 "Poppins", sans-serif;
+}
+
+.bike_conteudo_titulo::before {
+  display: block;
+  position: relative;
+  content: "";
+  width: 12px;
+  height: 8px;
+  background-color: var(--cor-p1);
+}
+
+.bike_item:nth-child(odd) {
+  background-color: var(--cor-11);
+  background-image: linear-gradient(
+    to right,
+    var(--cor-0) 30%,
+    var(--cor-11) 0%
+  );
+  color: var(--cor-0);
+}
+.bike_descricao_itens_link::after {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 10px;
+  margin-left: 12px;
+  background: url(../../img/icones/seta.svg);
+}
+.bike_descricao_itens_link:hover {
+  background: linear-gradient(#ffb60d, #e59317);
+}
+.bike_descricao_itens_link:hover::after {
+  transition: transform 0.2s;
+  transform: translateX(4px);
+}
+.menu_bike::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 85px;
+  height: 2px;
+  bottom: 10px;
+  background-color: aliceblue;
+  transition: 300ms;
+}
+@media (max-width: 800px) {
+  .bike_item_anuncio {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+  .bike_item:nth-child(odd) {
+    background-color: var(--cor-11);
+    background-image: none;
+    color: var(--cor-0);
+  }
+}
+
+@media (max-width: 400px) {
+  .bike_descricao_itens_todo {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
