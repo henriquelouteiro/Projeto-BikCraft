@@ -53,12 +53,26 @@
   padding: 10px 5px;
   background-color: var(--cor-2);
 }
-
+.contato_localizacao_tel,
+.contato_localizacao_endereco {
+  flex-wrap: wrap;
+}
 @media (max-width: 800px) {
   .contato_formulario_todo {
     grid-template-columns: 1fr;
   }
   .contato_formulario_cad {
     grid-template-columns: 1fr;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 319px) {
+  .contato_localizacao_tel,
+  .contato_localizacao_endereco {
+    font-size: 0.8rem;
+  }
+  .contato_formulario_localizacao {
+    padding: 10px;
   }
 }
