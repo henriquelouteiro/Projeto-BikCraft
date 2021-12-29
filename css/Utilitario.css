@@ -20,6 +20,10 @@
   margin-top: 50px;
 }
 
+.margin-bottom_50 {
+  margin-bottom: 50px;
+}
+
 .span-yellow {
   color: var(--cor-p1);
   font-weight: 1000;
@@ -109,5 +113,8 @@
   }
   .header_padding-bottom {
     padding-bottom: 30px;
+  }
+  .margin-bottom_50 {
+    margin-bottom: 10px;
   }
 }

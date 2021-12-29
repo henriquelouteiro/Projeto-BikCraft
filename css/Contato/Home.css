@@ -1,3 +1,6 @@
+.body_contato {
+  background-color: var(--cor-1);
+}
 .contato_formulario {
   background-image: linear-gradient(
     to bottom,
@@ -57,6 +60,37 @@
 .contato_localizacao_endereco {
   flex-wrap: wrap;
 }
+.contato_lojas_conteudo {
+  padding: 32px;
+  background-color: var(--cor-0);
+  gap: 20px;
+}
+
+.contato_lojas_itens {
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.contato_lojas_item {
+}
+.contato_lojas_item_endereco {
+  grid-template-columns: 1fr 1fr;
+}
+
+.contato_lojas_item_horario {
+  align-items: center;
+  gap: 10px;
+}
+
+.contato_lojas_item_endereco {
+  position: relative;
+}
+
+.contato_lojas_item_rua {
+  border-left: 5px solid var(--cor-p1);
+  padding: 2px;
+}
+
 @media (max-width: 800px) {
   .contato_formulario_todo {
     grid-template-columns: 1fr;
@@ -65,8 +99,19 @@
     grid-template-columns: 1fr;
     padding: 10px;
   }
+  .contato_lojas_item_endereco {
+    grid-template-columns: 1fr;
+  }
+  .contato_lojas_item_rua {
+    margin-bottom: 10px;
+  }
 }
 
+@media (max-width: 600px) {
+  .contato_lojas_itens {
+    grid-template-columns: 1fr;
+  }
+}
 @media (max-width: 319px) {
   .contato_localizacao_tel,
   .contato_localizacao_endereco {
